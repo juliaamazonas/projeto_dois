@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="Inicio">
+        <div class="cabecalho">
+            <img src="./img_agenda.png" alt="Icone de uma Agenda">
+            <h1>AGENDA</h1>
+        </div>
+        <div class="containerLista">
+            <nav>
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#AddContato"> Adicionar Contato</a></li>
+                    <li><a href="#Contatos">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="ContainerGeral">
+        <div class="ContainerFormulario">
+            <h1>AGENDA DE CONTATOS</h1>
+            <form id="AddContato">
+                <input id="NomeContato" type="text" required placeholder="Nome">
+                <input id="TelefoneContato" type="tel" required placeholder="Telefone com DDD" pattern="[0-9]+" title="Digite apenas números" minlength="10" maxlength="11">
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+        <div id="Contatos" class="ContainerTabela">
+            <h1>CONTATOS</h1>
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>TELEFONE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
